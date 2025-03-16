@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="#ffffff" name="theme-color" />
+        <meta content="#da532c" name="msapplication-TileColor" />
+
+        
+        <link href="&#x2F;icons&#x2F;site.webmanifest" rel="manifest" />
+         
+        <link
+            color="#5bbad5"
+            href="&#x2F;icons&#x2F;safari-pinned-tab.svg"
+            rel="mask-icon"
+        />
+         
+        <link
+            href="&#x2F;icons&#x2F;favicon-16x16.png"
+            rel="icon"
+            sizes="16x16"
+            type="image/png"
+        />
+         
+        <link
+            href="&#x2F;icons&#x2F;favicon-32x32.png"
+            rel="icon"
+            sizes="32x32"
+            type="image/png"
+        />
+         
+        <link
+            href="&#x2F;icons&#x2F;apple-touch-icon.png"
+            rel="apple-touch-icon"
+            sizes="180x180"
+        />
+         
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/galleria@1.6.1/dist/themes/folio/galleria.folio.min.css"
+            integrity="sha384-+rY0QD+LRnTOquDMzGa9lXU6jIwdiQuwCJQ2cdcW0qeP/0UbjQCZlXnRsUMA+9pH"
+            crossorigin="anonymous"
+        />
+         
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.1/css/academicons.min.css"
+            integrity="sha384-FIue+PI4SsI9XfHCz8dBLg33b0c1fMJgNU3X//L26FYbGnlSEfWmNT7zgWc2N9b6"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+            integrity="sha256-rTpdO0HXBCNpreAHcu6tB2Ppg515Vo+5GtYSsnNLz+8="
+            crossorigin="anonymous"
+        />
+        <link href="https://adil-ahmad.net/deep-thought.css" rel="stylesheet" />
+         
+
+        <title> The ASTeRiSC Research Lab </title>
+
+           
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+            integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs"
+            crossorigin="anonymous"
+        />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+            integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/mathtex-script-type.min.js"
+            integrity="sha384-jiBVvJ8NGGj5n7kJaiWwWp9AjC+Yh8rhZY3GtAX8yU28azcLgoRo4oukO87g7zDT"
+            crossorigin="anonymous"
+        ></script>
+        
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+            integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"
+            crossorigin="anonymous"
+        ></script>
+         
+    </head>
+
+    <body class="has-background-white">
+        <nav
+            aria-label="section navigation"
+            class="navbar is-light"
+            role="navigation"
+        >
+            <div class="container">
+                <div class="navbar-brand">
+                    <a
+                        class="navbar-item is-size-5 has-text-weight-bold"
+                        href="https:&#x2F;&#x2F;adil-ahmad.net"
+                        >The ASTeRiSC Research Lab</a
+                    >
+                    <a
+                        aria-expanded="false"
+                        aria-label="menu"
+                        class="navbar-burger burger"
+                        data-target="navMenu"
+                        role="button"
+                    >
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu" id="navMenu">
+                    <div class="navbar-end has-text-centered">
+                           
+                        <a
+                            class="navbar-item has-text-weight-semibold"
+                            href="https:&#x2F;&#x2F;adil-ahmad.net&#x2F;"
+                        >
+                            Home
+                        </a>
+                          
+                        <a
+                            class="navbar-item has-text-weight-semibold"
+                            href="https:&#x2F;&#x2F;adil-ahmad.net&#x2F;people"
+                        >
+                            People
+                        </a>
+                          
+                        <a
+                            class="navbar-item has-text-weight-semibold"
+                            href="https:&#x2F;&#x2F;adil-ahmad.net&#x2F;research&#x2F;"
+                        >
+                            Research
+                        </a>
+                                   
+                        <a
+                            class="navbar-item"
+                            id="nav-search"
+                            title="Search"
+                            data-target="#search-modal"
+                        >
+                            <span class="icon">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </a>
+                        <a
+                            class="navbar-item"
+                            id="dark-mode"
+                            title="Switch to dark theme"
+                        >
+                            <span class="icon">
+                                <i class="fas fa-adjust"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+          
+<section class="section">
+  <div class="container">
+    <div class="has-text-centered">
+      <h1 class="title is-2"></h1>
+      <p class="subtitle is-4"></p>
+      
+      <figure class="image is-flex is-justify-content-center is-align-items-center">
+        <img class="is-rounded" src="pictures&#x2F;ASTERISC-transparent.png" style="max-width: 400px; border-radius: 0%;" />
+      </figure>
+      <br>
+      
+      
+<p>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a href="https://github.com/ASTERISC-Release" target="_blank">
+    <span class="icon is-large" title="GitHub">
+      <i class="fab fa-github fa-lg"></i>
+    </span>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a href="mailto:adil.ahmad@asu.edu" target="_blank">
+    <span class="icon is-large" title="Email">
+      <i class="far fa-envelope fa-lg"></i>
+    </span>
+  </a>
+  
+  
+  
+
+  
+
+  
+</p>
+
+    </div>
+    <div class="content">
+      <style>
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 10%;
+  padding: 10px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+<div style="text-align: justify">
+<!-- ## Who are we? -->
+<!-- We are a group of individuals in the [School of Computing and Augmented Intelligence (SCAI)](https://scai.engineering.asu.edu/) at Arizona State University (ASU) -->
+<!-- The **AS**U **T**rust**e**d, **R**el**i**able, and **S**ecure **C**omputing (**ASTeRiSC**) Research Lab comprise a [group of individuals](people/) that are passionate about building computer systems with the following properties: -->
+<p>We comprise a <a href="https://adil-ahmad.net/people/">group of individuals</a> that are passionate about building computer systems with the following properties:</p>
+<ul>
+<li>
+<p><strong>Secure:</strong> Software like the operating system and hypervisors operate at higher <em>privileges</em> than the rest, and are relied upon to enforce data protection in enterprise computers. Yet, hundreds of vulnerabilities are discovered in such software each year.
+Our research improves the security of system software with novel abstractions for protection and fine-grained attack investigation.</p>
+</li>
+<li>
+<p><strong>Trusted:</strong> In some scenarios, privileged system software like the operating system kernel and hypervisor may be controlled by untrusted individuals. One important scenario for this is computations running on cloud machines where system software is configured by cloud employees. Our systems guarantee computational confidentiality and integrity in such cases.</p>
+</li>
+<li>
+<p><strong>Reliable:</strong> The secure and trustworthy nature of a system depends on important assumptions about the reliability of its software and hardware components to correctly execute. For instance, memory errors in sofware can lead to crashes that invalidate the availability property of the system. Our research enables efficient and automated techniques to test these assumptions.</p>
+</li>
+</ul>
+<p>And that is why we are called the <strong>AS</strong>U <strong>T</strong>rust<strong>e</strong>d, <strong>R</strong>el<strong>i</strong>able, and <strong>S</strong>ecure <strong>C</strong>omputing (<strong>ASTeRiSC</strong>) Research Lab!</p>
+<p>ASTeRiSC operates out of the <a rel="noopener nofollow noreferrer" target="_blank" href="https://scai.engineering.asu.edu/">School of Computing and Augmented Intelligence (SCAI)</a> and is directed by <a rel="noopener nofollow noreferrer" target="_blank" href="https://adil-ahmad.net">Adil Ahmad</a>.</p>
+<!-- I am an assistant professor in the [School of Computing and Augmented Intelligence (SCAI)](https://scai.engineering.asu.edu/) at Arizona State University (ASU). My research interests broadly lie within the domains of __computer security__, __systems__, and __architecture__. My research goal is to protect sensitive data from powerful adversaries. To this end, I routinely leverage hardware-assisted trusted execution environments while addressing their fundamental limitations in terms of protection and usability. I also design new principles to strengthen critical system software (like operating systems and hypervisors) on a computer. I am a receipient of a US DoD [Defense Established Program to Stimulate Competitive Research (DEPSCoR) Award](https://www.defense.gov/News/Releases/Release/Article/3711356/dod-announces-defense-established-program-to-stimulate-competitive-research-awa/). -->
+<!-- Before joining ASU, I spent many enjoyable years obtaining a PhD from Purdue (go boilermakers!), where I was extremely fortunate to work with [Pedro Fonseca](https://www.cs.purdue.edu/homes/pfonseca/) and [Byoungyoung Lee](https://lifeasageek.github.io/). During my PhD, I greatly enjoyed interning at Microsoft Research and NEC Labs, where I worked with [Sangho Lee](https://sangho2.github.io/), [Marcus Peinado](https://www.microsoft.com/en-us/research/people/marcuspe/), and [Chung Hwan Kim](https://chungkim.gitlab.io/). -->
+<table><thead><tr><th>❗  We are actively looking to hire PhD students for exciting systems and security research projects. If you are interested in working in this area, please reach out through email.</th></tr></thead><tbody>
+</tbody></table>
+<!-- | :warning:  I do not hire students as graders or TAs for a class, if they have not previously taken the class. |
+|-----------------------------------------| -->
+</div>
+<h2 id="recent-updates">Recent Updates</h2>
+<ul>
+<li>
+<p>Registration is now open for the 2nd Desert CodeSprouts Workshop! Please visit <a rel="noopener nofollow noreferrer" target="_blank" href="https://scai.engineering.asu.edu/desert-codesprouts-workshop/">our website</a> for more information.</p>
+</li>
+<li>
+<p>✈️ Chuqi will be travelling to USENIX EuroSys 2025 to present our work. Please connect with him there!</p>
+</li>
+<li>
+<p>Our EuroSYS paper's code artifact is evaluated to be available and functional. Congratulations Chuqi and Rahul!</p>
+</li>
+<li>
+<p>Rahul presented his first poster at ISOC NDSS 2025!</p>
+</li>
+<li>
+<p>✈️ Rahul and Adil will be travelling to ISOC NDSS 2025. See you all there!</p>
+</li>
+<li>
+<p>One paper accepted to appear at <strong>USENIX EuroSYS 2025</strong>! Congratulations to Chuqi, Rahul, and all collaborators.</p>
+</li>
+<li>
+<p>Adil gave a talk at Seoul National University (SNU) on our recent research endeavours towards designing a secure logging infrastructure for mission-critical computers.</p>
+</li>
+<li>
+<p>One paper and one poster accepted to appear at <strong>ISOC NDSS 2025</strong>! Congratulations to Rahul, Chuqi, and all collaborators.</p>
+</li>
+<li>
+<p>Pooyan Fazli, Hasti Seifi, and Adil Ahmad have received a 2024 Google ExploreCSR award to expand our outreach activities (including the Desert CodeSprouts Workshop). Thanks Google!</p>
+</li>
+<li>
+<p>One paper was accepted to appear at <strong>ACM CCS 2024</strong>! Congratulations to Chuqi and all my collaborators. You can find the research artifact on GitHub.</p>
+</li>
+<li>
+<p>Intel has donated data center equipment to our research lab to help pursue secure enclave-related research. Thanks Intel!</p>
+</li>
+<li>
+<p>Read all about the <strong>Desert CodeSprouts Workshop</strong> in this <a rel="noopener nofollow noreferrer" target="_blank" href="https://scai.engineering.asu.edu/news/training-the-techies-of-tomorrow/">news article</a>.</p>
+</li>
+<li>
+<p>Organized the <a rel="noopener nofollow noreferrer" target="_blank" href="https://scai.engineering.asu.edu/desert-codesprouts-workshop/"><strong>1st Desert CodeSprouts Workshop for Middle-School Students</strong></a> in the Greater Phoenix area. Thank you to all the participants, coordinators, volunteers, and especially the workshop co-founder (Prof. Hasti Seifi). Special thanks to the School of Computing and Augmented Intelligence (SCAI) and <a rel="noopener nofollow noreferrer" target="_blank" href="http://ace-institute.asu.edu/">the American Cybersecurity Education</a> (ACE) Institute for co-sponsoring this event. Please stay tuned for future workshop events at our <a rel="noopener nofollow noreferrer" target="_blank" href="https://scai.engineering.asu.edu/desert-codesprouts-workshop/">website</a>!</p>
+</li>
+</ul>
+<!-- - Invited to serve in the program committees of [IEEE S&P 2025](https://sp2025.ieee-security.org/), [ACM EuroSys 2025](https://2025.eurosys.org/), and [IEEE HPCA 2025](https://hpca-conf.org/2025/). Please submit your best (security, systems, and architecture) work!
+
+- Presented **Veil** at ACM ASPLOS 2024 in San Diego. Thank you all for the amazing reception!
+
+- Greatly honored to receive the [**2024 US Department of Defense's Defense Established Program to Stimulate Competitive Research (DEPSCoR) Award**](https://www.defense.gov/News/Releases/Release/Article/3711356/dod-announces-defense-established-program-to-stimulate-competitive-research-awa/)! Our work will strive to overhaul the state of today's computer logging infrastructure for mission-critical computers. Thank you for the support!
+
+- Teaching the **Operating Systems** course at SCAI in Fall 2024. Please refer to the [link](teaching/index.html) for details.
+
+- Invited to serve in the program committees of [USENIX Security 2024](https://www.usenix.org/conference/usenixsecurity24), [ISOC NDSS 2024 Poster Session](https://www.ndss-symposium.org/ndss2024/), and [ISOC Workshop on Artificial Intelligence System with Confidential Computing (AISCC) 2024](https://www.ndss-symposium.org/ndss2024/co-located-events/aiscc/). Please submit your best work!
+
+- Presented **eOPF** at *USENIX OSDI 2023* in Boston. Thank you all for the amazing questions and discussion!
+
+- [**Veil**](papers/ahmad-veil.pdf) was accepted to appear at ACM ASPLOS 2024! Stay tuned for the paper PDF and artifact.
+
+- [**OmniLog**](papers/gandhi-omnilog.pdf) was accepted to appear at *USENIX Security 2023*! This work calls for a rethink of audit system designs in modern computers to address (a) the limited collection of system logs relevant to forensic analysis of kernel exploits and (b) the tampering of collected logs. Congratulations to Aniket and all my collaborators.
+
+- [**eOPF**](../papers/ahmad-eopf.pdf) was accepted to appear at *USENIX OSDI 2023*! In this work, we design a trustworthy and extensible software layer to complement the hardware capabilities of a widely-used confidential computing technology (Intel SGX) with strong cloud orchestration and side-channel defense features.
+
+- Rebooting the **Advanced Operating Systems** course at SCAI in Spring 2023. Please refer to the [link](teaching/index.html) for details.
+
+- Prof. [Hasti Seifi](https://hastiseifi.com/) and I are co-designing the first **ASU SCAI Outreach Workshop** in 2023/2024! Please stay tuned for further information and website details.
+
+- Teaching a course titled "Trusted Computing in Clouds: Past, Present, and Future" in Fall 2022. Please refer to the [link](teaching/index.html) for details. -->
+<!-- - Joined School of Computing and Augmented Intelligence (SCAI) at ASU!
+
+- Successfully defended my PhD thesis. Thank you folks (you know who you are) for your constant love and support! -->
+<hr />
+<h2 id="recent-publications-all">Recent Publications (... <a href="https://adil-ahmad.net/research/">All</a>)</h2>
+<p><strong>   Erebor: A Drop-In Sandbox Solution for Private Data Processing in Untrusted Confidential Virtual Machines</strong></p>
+<p>     <u>C. Zhang</u>, <u>R. Priolkar</u>, Y. Jiang, Y. Xiao, M. Vij, Z. Liang, and <u>A. Ahmad</u> (<em>USENIX EuroSYS 2025</em>)</p>
+<p><strong>   Secure Data Analytics in Apache Spark with Fine-grained Policy Enforcement and Isolated Execution</strong></p>
+<p>     B. Kim, J. Hur, <u>A. Ahmad</u>, and B. Lee (<em>ISOC NDSS 2025</em>)</p>
+<p><strong>   Veil: A Protected Services Framework for Confidential Virtual Machines</strong>
+[<a href="https://adil-ahmad.net/papers/ahmad-veil.pdf">paper</a> | <a href="https://adil-ahmad.net/slides/ahmad-veil.pdf">slides</a> | <a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/adilahmad17/Veil">code</a>]</p>
+<p>     <u>A. Ahmad</u>, B. Ou, C. Liu, X. Zhang, and P. Fonseca (<em>ACM ASPLOS 2024</em>)</p>
+<p><strong>   An Extensible Orchestration and Protection Framework for Confidential Cloud Computing</strong> <a href="../papers/ahmad-eopf.pdf">[paper]</a></p>
+<p>     A. Ahmad, A. Shultz, B. Lee, and P. Fonseca (<em>USENIX OSDI 2023</em>)</p>
+<hr />
+<h2 id="sponsors">Sponsors</h2>
+<p>We remain thankful to the United States Air Force Office of Scientific Research (AFOSR), Google Research, and Intel Labs for support our research and education efforts.</p>
+<!-- - United States Air Force Office of Scientific Research (AFOSR)
+- Google Research
+- Intel Labs -->
+<!-- <p align="center">
+<div class="row">
+  <div class="column">
+    <img src="../pictures/afosr.jpg" alt="Snow" width="100" height="200">
+  </div>
+  <div class="column">
+    <img src="../pictures/Google-Research.png" alt="Snow" width="120" height="200">
+  </div>
+  <div class="column">
+    <img src="../pictures/Intel-labs.png" alt="Snow" width="100" height="200">
+  </div>
+</div>
+</p> -->
+
+    </div>
+  </div>
+</section>
+ 
+        <section class="modal" id="search-modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <header class="modal-card-head">
+                    <p class="modal-card-title">Search</p>
+                </header>
+                <section class="modal-card-body">
+                    <div class="field mb-2">
+                        <div class="control">
+                            <input
+                                class="input"
+                                id="search"
+                                placeholder="Search this website."
+                                type="search"
+                            />
+                        </div>
+                    </div>
+                    <div class="search-results">
+                        <div class="search-results__items"></div>
+                    </div>
+                </section>
+            </div>
+            <button aria-label="close" class="modal-close is-large"></button>
+        </section>
+              
+        <footer class="footer py-4">
+            <div class="content has-text-centered">
+                <!-- <p>
+        Built with
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-code"></i>
+          </span>
+          <span>code</span>
+        </span>
+        and
+        <span class="icon-text">
+          <span class="icon">
+            <i class="fas fa-heart"></i>
+          </span>
+          <span>love</span>
+        </span>
+      </p> -->
+                <p>
+                    Powered by
+                    <span class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-power-off"></i>
+                        </span>
+                        <span>zola</span>
+                    </span>
+                </p>
+            </div>
+        </footer>
+         
+        <script
+            src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+            integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/galleria@1.6.1/dist/galleria.min.js"
+            integrity="sha384-QSfwGT8/EU536DKdtyP2D6SLlh8zBaZ0cVkwfrwhqzIU9VCfJT00CLVP5t+HAiYg"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/galleria@1.6.1/dist/themes/folio/galleria.folio.min.js"
+            integrity="sha384-DwpKI+deZB267+hPKwiOIc5Y2GKsVL0mR6hgz7GgIu7AgAMYqJwcJKY1YBNfhWcY"
+            crossorigin="anonymous"
+        ></script>
+         
+        <script
+            src="https://cdn.jsdelivr.net/npm/mermaid@8.13.5/dist/mermaid.min.js"
+            integrity="sha384-0yWn54pSGtfKCU+skfA69l25VsCw+MZt4LQov3xNRoS7YkAMrFokGgSBnAWSK4pv"
+            crossorigin="anonymous"
+        ></script>
+         
+        <script
+            src="https://cdn.jsdelivr.net/npm/chart.xkcd@1.1.13/dist/chart.xkcd.min.js"
+            integrity="sha384-xC3h1+IHXK8seA+8KfT79Z4e0GPsznjXBoMa5nd8ooWKplPyXx92NOmljWxLC/cs"
+            crossorigin="anonymous"
+        ></script>
+         
+        <script src="https://adil-ahmad.net/elasticlunr.min.js"></script>
+        <script src="https://adil-ahmad.net/search_index.en.js"></script><script src="https://adil-ahmad.net/js/site.js"></script>
+
+           
+    </body>
+</html>
