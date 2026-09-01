@@ -184,46 +184,31 @@ img {
   border-radius: 5%;
 }
 
-/*
+/* People grid: images sit side-by-side and wrap, each row centered */
 .row {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-*/
 
-/* Create three equal columns that sits next to each other */
-/*
+/* One card per person (25% => four per row) */
 .column {
-  flex: 33.33%;
-  padding: 5px;
-}
-*/
-
- /* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 25%;
-  height: 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+  box-sizing: border-box;
   padding: 20px;
+  text-align: center;
 }
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 </style>
-<h2 id="principal-investigator">Principal Investigator</h2>
-<p align="center">
-  <img src="../pictures/adil-headshot.jpg" width="200" height="200" />
-  <br>
-  <a class="name" href="https://adil-ahmad.net">Adil Ahmad</a>
-</p>
-<hr />
 <h2 id="current-members">Current Members</h2>
-<p align="center">
 <div class="row">
+  <div class="column">
+    <img src="../pictures/adil-headshot.jpg" alt="Snow" width="200" height="200">
+    <br>
+    <a class="name" href="https://adil-ahmad.net">Adil Ahmad</a>
+    <br>
+    Principal Investigator
+  </div>
   <div class="column">
     <img src="../pictures/Chuqi-cropped.jpg" alt="Snow" width="200" height="200">
     <br>
@@ -252,10 +237,6 @@ img {
     <br>
     PhD Student
   </div>
-</div>
-</p>
-<p align="center">
-<div class="row">
   <div class="column">
     <img src="../pictures/franziska5.jpg" alt="Snow" width="200" height="200">
     <br>
@@ -271,7 +252,6 @@ img {
     PhD Student
   </div>
 </div>
-</p>
 <!-- <p align="center">
 <div class="row">
   <div class="column">
@@ -323,7 +303,7 @@ img {
 <p>Harsh Manral (M.S. in Computer Engineering)</p>
 </li>
 <li>
-<p>Santosh Gokul (M.S. in Computer Science, 2025, First Job: Nokia)</p>
+<p>Santosh Gokul Narayan (M.S. in Computer Science, 2025, First Job: Nokia)</p>
 </li>
 <li>
 <p>Feras Al-Qassas (M.S. in Computer Science, 2025, PhD: Purdue University)</p>
